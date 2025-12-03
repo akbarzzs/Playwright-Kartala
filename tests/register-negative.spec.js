@@ -4,7 +4,7 @@ test('Register - Negative Path', async ({ page }) => {
   await page.goto('https://test-automation.kartala.dev/register');
 
   await page.getByRole('textbox', { name: 'Name' }).fill('A');
-  await page.getByRole('textbox', { name: 'Email' }).fill('akuntester2@gmail.com');
+  await page.getByRole('textbox', { name: 'Email' }).fill('akuntester1@gmail.com');
   await page.getByRole('textbox', { name: 'Phone' }).fill('08123456789');
   await page.getByRole('textbox', { name: 'Password' }).fill('123456');
   await page.getByRole('button', { name: 'Register' }).click();
